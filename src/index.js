@@ -66,8 +66,16 @@ function onLoadMoreBtn() {
     .then(({ data }) => {
       markup(data.hits);
       simpleLightBox = new SimpleLightbox('.gallery a').refresh();
+      const { height: cardHeight } = document
+        .querySelector('.gallery')
+        .firstElementChild.getBoundingClientRect();
 
-      const totalPages = Math.ceil(data.totalHits / perPage);
+      window.scrollBy({
+        top: cardHeight * 2,
+        behavior: 'smooth',
+      });
+
+      const totalPages = Math.ceil(data.totalHits / PER_PAGE);
 
       if (page > totalPages) {
         refs.loadMoreBtn.classList.add('is-hidden');

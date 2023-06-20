@@ -66,7 +66,7 @@ p {
 
 .search-form button:hover,
 .search-form button:focus {
-    background-color: rgb(31, 111, 4);
+    background-color: rgb(214, 8, 128);
     transition: all 0.3s;
 }
 
@@ -160,7 +160,7 @@ p {
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #fbfbfb;
+    background-color: rgb(237, 18, 189);
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
     font: inherit;
     color: rgb(0, 0, 0);
@@ -178,7 +178,7 @@ p {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: #fdfdfd;
+    background: rgb(237, 18, 189);
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
     color: rgb(0, 0, 0);
     cursor: pointer;
@@ -193,6 +193,6 @@ p {
 
 .btn-load-more:hover,
 .btn-to-top:hover {
-    background-color: #c3c3c3;
+    background-color: rgb(214, 8, 128);
     transition: all 0.3s;
 }
