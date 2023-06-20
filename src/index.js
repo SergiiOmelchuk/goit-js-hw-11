@@ -23,6 +23,7 @@ onScroll();
 onToTopBtn();
 
 function onSearch(e) {
+  console.log(e.target);
   e.preventDefault();
   window.scrollTo({ top: 0 });
   page = 1;
